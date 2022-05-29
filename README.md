@@ -1,3 +1,10 @@
+# Mandatory
+
+Please do run the following code in terminal of this folder to run this project:
+### `npm run`
+### `npm install`
+because i have not included the node modules!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
