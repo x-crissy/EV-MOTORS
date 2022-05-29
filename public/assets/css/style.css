@@ -1,0 +1,223 @@
+
+body{
+    user-select: none;
+    background: url(/public/assets/images/bg.jfif);
+}
+
+.logo{
+    margin-left: 20%;
+    margin-top: 10%;
+    display: block;
+    width: auto;
+}
+.navbar{
+    /* margin: 8%; */
+    /* margin-left: 25%; */
+    font-size: 25px;
+    margin-top: 5%;
+    text-align:center;
+    justify-content: space-between;
+    padding: 15px;
+    display: flex;
+    
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 230px;
+}
+.navbar ul li a{
+    color: #444;
+    text-decoration: none;
+    font-family: monospace;
+}
+/* Form */
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  bottom: 50;
+  right: 34%;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 100%;
+  padding: 10px;
+  background-color: rgba(24, 24, 24, 0.952);
+  border-radius: 1%;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 5%;
+  background: rgb(206, 206, 206);
+  box-shadow:  0 10 px 20px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: rgb(255, 157, 0);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(71, 71, 71);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* close form */
+.rightimg{
+    float: right;
+    display: block;
+    margin-top: -58%;
+    position: relative;
+}
+.rightimg div{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 0%;
+    bottom: 0%;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+    margin-left: 1%;
+}
+.rightimg:hover{
+    cursor: pointer;
+}
+.rightimg:hover div{
+    width: 300px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+    
+}
+.latest{
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: text;
+
+}
+[type=radio] {
+    display: none;
+}
+
+#slider{
+    height: 35vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+#slider label{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.8s ease-in;
+
+}
+#s1:checked ~ #slider4, #s2:checked ~ #slider5, 
+#s3:checked ~ #slider1, #s4:checked ~ #slider2, 
+#s5:checked ~ #slider3{
+    box-shadow: 0 10 px 20px 0 rgba(0, 0, 0, 0.37);
+    transform: translate3d(-30%, 0, -200px);
+
+} 
+#s1:checked ~ #slider5, #s2:checked ~ #slider1, 
+#s3:checked ~ #slider2, #s4:checked ~ #slider3, 
+#s5:checked ~ #slider4{
+    box-shadow: 0 10 px 20px 0 rgba(255, 255, 255, 0.1),
+    0 10px 20px 0 rgba(0, 0, 0, 0.8);
+    transform: translate3d(-15%, 0, -100px);
+
+} 
+#s1:checked ~ #slider1, #s2:checked ~ #slider2, 
+#s3:checked ~ #slider3, #s4:checked ~ #slider4, 
+#s5:checked ~ #slider5{
+    box-shadow: 0px 20px 20px 0px rgba(225,255,255,0.1),
+    0 20px 20px 0px rgba(0,0,0,.7);
+    transform: translate3d(0, 0, 0);
+}
+#s1:checked ~ #slider2, #s2:checked ~ #slider3, 
+#s3:checked ~ #slider4, #s4:checked ~ #slider5, 
+#s5:checked ~ #slider1{
+    box-shadow: 0 10px 20px 0 rgba(255, 255, 255, 0.1),
+    0 10px 20px 0 rgba(0,0,0,.8);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked ~ #slider3, #s2:checked ~ #slider4, 
+#s3:checked ~ #slider5, #s4:checked ~ #slider1, 
+#s5:checked ~ #slider2{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.37);
+    transform: translate3d(30%, 0, -200px);
+}
+.new{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.content{
+    display: block;
+}
+.new h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    color: rgba(200, 129, 15, 0.794);
+}
+.content blockquote{
+    box-shadow: #444 0 4px 4px;
+    width: 27% auto;
+    align-items: center;
+    justify-content:center;
+}
+
+.content img{
+    cursor: pointer;
+}
+.content h2{
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Times New Roman', Times, serif;
+}
+.cars{
+    margin-left: 5%;
+    display: inline-block;
+    background: #ddd;
+    margin-right: 0%;
+}
