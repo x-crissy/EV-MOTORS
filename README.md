@@ -1,5 +1,5 @@
 # Mandatory
-
+This Project is made by "Rishabh" by coding name-crissy
 Please do run the following code in terminal of this folder to run this project:
 ### `npm run`
 ### `npm install`
